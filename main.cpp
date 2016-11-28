@@ -1,3 +1,18 @@
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ 
+GPA Calculator
+    : This is my first side project with C++ as well as my first experience with arrays of pointers. The program prints a prompt requesting a 
+    : number of classes to be graded by the user. The program then asks the user for a number of grades and credits per class which are 
+    : stored in corresponding arrays. Once the gives the input for all the classes, the program calculates and prints the user's 
+    : GPA using the following formula on line 138.   ::   finalGPA = totalCreditsEarned  / totalPossibleCredits;
+ 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+*/
+
+
+
 #include <iostream>
 #include <iomanip>
 #include <string>
@@ -26,7 +41,9 @@ int main() {
 
 void printInstructions()
 {
-    std::cout << "\n---------------------------------------------\n COLLEGIATE GPA CALCULATOR\n---------------------------------------------" << std::endl;
+    std::cout << "\n---------------------------------------------\n" << std::endl;
+    std::cout<< "COLLEGIATE GPA CALCULATOR\n" << std::endl;
+    std::cout<< "---------------------------------------------" << std::endl;
     std::cout << "\nInstructions:\n1. Enter the number of classes to be graded." << std::endl;
     std::cout << "2. Following the prompt, enter the credits per class and the grade received (A,B,C,D,F)." << std::endl;
     std::cout << "3. Your GPA will be printed to the window. You may then exit or add additional courses" << std::endl;
@@ -95,7 +112,9 @@ float calculateGPA(int classAmount, char letterGrade[], float creditHours[], std
     {
         totalPossibleCredits += creditHours[i]; // Calculates total possible credits
         
-        switch (letterGrade[i]) {
+        // Switch statement calculates how many credits are earned depending on the letter grade recieved.
+        switch (letterGrade[i])
+        {
             case 'A':
                 totalCreditsEarned += creditHours[i] * 4.0;
                 break;
@@ -116,7 +135,7 @@ float calculateGPA(int classAmount, char letterGrade[], float creditHours[], std
         }
     }
     
-    finalGPA = totalCreditsEarned  / totalPossibleCredits;
+    finalGPA = totalCreditsEarned  / totalPossibleCredits; // GPA Formula
     
     return finalGPA;
 }
@@ -130,16 +149,6 @@ void printGPA(float GPA)
     std::cout << "Final GPA : " << std::setprecision(3)<< GPA << std::endl;
     std::cout << "---------------------\n" << std::endl;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
