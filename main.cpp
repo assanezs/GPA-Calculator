@@ -141,6 +141,13 @@ void printGPA(float GPA)
 {
     std::cout << "\n---------------------" << std::endl;
     std::cout << "Final GPA : " << std::setprecision(3)<< GPA << std::endl;
+ if(GPA==0)
+
+    {
+    std::cout<<"Failed!"<<std::endl;
+}
+	else
+    std::cout<<"Passed!";
     std::cout << "---------------------\n" << std::endl;
 }
 
