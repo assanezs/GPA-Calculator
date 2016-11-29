@@ -1,6 +1,6 @@
 
 /*
- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
  
 C++ GPA Calculator
  : This is my first side project with C++ as well as my first experience with arrays of pointers. The 
@@ -8,7 +8,7 @@ C++ GPA Calculator
  : then asks the user for a number of grades and credits per class which are stored in corresponding 
  : arrays. The program calculates and prints the user's GPA using the following formula on line 133.
  
- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 */
 
 
@@ -56,12 +56,12 @@ void getGPA ()
 {
     int classAmount = getNumClasses();  // Defines the number of classses to be graded.
     
-    char* letterGrade = new char[classAmount];  // Array of pointers. Size determined by user upon runtime.
+    char* letterGrade = new char[classAmount];  // Arrays of pointers. Size determined by user upon runtime.
     float* creditHours = new float[classAmount];
     std::string* courseName = new std::string[classAmount];
     
-    getClassData(classAmount, letterGrade, creditHours, courseName);  // Loops user inpput prompt based based on classAmount.
-    printGPA(calculateGPA(classAmount, letterGrade, creditHours, courseName));  // Calculated float type GPA is printed to the console.
+    getClassData(classAmount, letterGrade, creditHours, courseName);  // Fetches grades, course names, and course credits.
+    printGPA(calculateGPA(classAmount, letterGrade, creditHours, courseName));  // Calculated float type GPA is printed.
 }
 
 
