@@ -1,14 +1,14 @@
 
 /*
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
  
 GPA Calculator
-    : This is my first side project with C++ as well as my first experience with arrays of pointers. The program prints a prompt requesting a 
-    : number of classes to be graded by the user. The program then asks the user for a number of grades and credits per class which are 
-    : stored in corresponding arrays. Once the gives the input for all the classes, the program calculates and prints the user's 
-    : GPA using the following formula on line 138.   ::   finalGPA = totalCreditsEarned  / totalPossibleCredits;
+ : This is my first side project with C++ as well as my first experience with arrays of pointers. The program prints a prompt requesting a
+ : number of classes to be graded by the user. The program then asks the user for a number of grades and credits per class which are
+ : stored in corresponding arrays. Once the gives the input for all the classes, the program calculates and prints the user's
+ : GPA using the following formula on line 138.   ::   finalGPA = totalCreditsEarned  / totalPossibleCredits;
  
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 */
 
 
